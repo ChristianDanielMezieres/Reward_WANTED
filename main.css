@@ -44,22 +44,32 @@ H1 {
     width: 298px;
     opacity: 0;
     transition: .5s ease;
-    background: url("http://www.photography-mezieres.com/image/integration_gandalf.png");
+    background: none;
     border: 1px solid #ad3806;
     border-radius: 18px;
   }
   
-.container:hover .overlay {
+.container:hover .image {
     opacity: 1;
+    height: 341px;
+    width: 298px;
   }
+
+.container:hover .overlay{
+    opacity: 1;
+}
+
+
 
 .ThebigWanted {
     color: #ffffff;
     text-align: center;
     font-size: 2em;
     padding-top: 250px;
-
+    
 }
+
+
   
 .text {
     color: #000000;
@@ -76,7 +86,12 @@ H1 {
     width: 230px;
     min-height: 40px;
     opacity: 0.8;
+    transition: .3s ease;
   }
+
+.container:hover .text {
+    opacity: 0;
+}
 
 .text2 {
     color: #ffffff;
@@ -85,6 +100,10 @@ H1 {
     top: 50%;
     left: 20%;
     position: absolute;
+    transition: .3s ease;
 }
-  
+
+.container:hover .text2 {
+    opacity: 0;
+}
 
